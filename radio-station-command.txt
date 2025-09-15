@@ -1,1 +1,0 @@
-for x in *.wav; do   duration=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$x" | awk '{print int($1) + ($1 > int($1))}');   echo "Processing $x with a timeout of ${duration}s";   sudo timeout "${duration}s" ./repos/rpitx/pifmrds -audio "$x" -freq 462.575; done
