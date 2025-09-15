@@ -70,3 +70,13 @@ Another example for a single file on a different frequency:
 ```bash
 cd /home/pi/repos/rpitx && sudo ./pifmrds -freq 17.2 -audio /home/pi/broadcasts/Tropical_Island_relaxing_guitar_20250711_093907.wav"
 ```
+
+## Target System Details (Core)
+
+This script is designed for and tested on the following Raspberry Pi configuration:
+
+*   **Operating System**: Raspbian GNU/Linux 10 (buster)
+*   **Architecture**: armv7l
+*   **CPU Model**: Cortex-A53
+*   **CPUs**: 4
+
